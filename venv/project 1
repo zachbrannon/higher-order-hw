@@ -10,8 +10,6 @@ while 0 < len(images):
     if 1 < len(dups):
         lol.append(dups)
     print(lol)
-file_size = list(map(getsize,images))
-non_dups = list(filter(lambda x:1 < file_sizes.count(getsize(x)), file_list))
 
 m=max(lol,key=lambda x:len(x))
 print(m)
