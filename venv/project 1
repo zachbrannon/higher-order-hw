@@ -1,0 +1,21 @@
+from compare import compare
+images= open(r"C:\Users\Zachb\Downloads\Project1\Project1\images")
+
+lol =[]
+file_size = list(map(getsize,images))
+non_dups = list(filter(lambda x:1 < file_sizes.count(getsize(x)), file_list))
+while 0 < len(images):
+    dups = [x for x in images if compare(images[0], x)]
+    images = [x for x in images if not compare(images[0], x)]
+    if 1 < len(dups):
+        lol.append(dups)
+    print(lol)
+file_size = list(map(getsize,images))
+non_dups = list(filter(lambda x:1 < file_sizes.count(getsize(x)), file_list))
+
+m=max(lol,key=lambda x:len(x))
+print(m)
+
+ml=max(lol, key=lambda x: len(x) * len(x[0]))
+print(ml)
+print(f"max : {(len(m)-1) * len(m[0])}")
